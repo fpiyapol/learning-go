@@ -55,4 +55,18 @@ func main() {
 	slice[1] = 200
 	fmt.Println(c)
 	// [1, 20]
+
+	// --- string --
+	var str string = "Hello World"
+	fmt.Println(str, len(str), str[6:])
+	// Hello World 11 World
+
+	var s string = "English ไทย"
+	var bytes []byte = []byte(s)
+	var runes []rune = []rune(s)
+	fmt.Println(bytes)
+	// [69 110 103 108 105 115 104 32 224 185 132 224 184 151 224 184 162]
+	fmt.Println(runes)
+	// [69 110 103 108 105 115 104 32 3652 3607 3618]
+
 }
